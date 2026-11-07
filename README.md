@@ -1,8 +1,8 @@
 # RoadPilot-Docs
 
-RoadPilot-Docs is the planned central documentation for the entire RoadPilot ecosystem.
+RoadPilot-Docs is the central documentation for the entire RoadPilot ecosystem. It currently contains an [architecture overview](docs/architecture.md) and this README; more documentation is planned.
 
-> **Status: early planning.** This repository does not contain source code yet. Responsibilities, architecture and roadmap below describe the **planned** scope, not existing functionality.
+> **Status: early.** This repository contains documentation only, no source code. The [architecture overview](docs/architecture.md) describes the other repositories as of Phase 4.3 and links to their authoritative specifications. The user guides, API reference and other items below are **planned**, not existing.
 
 ## Purpose
 
@@ -36,6 +36,8 @@ RoadPilot is split into independent repositories. Each one is developed, version
 |---|---|
 | [RoadPilot](https://github.com/RoadPilotHQ/RoadPilot) | Main desktop application |
 | [RoadPilot-Map](https://github.com/RoadPilotHQ/RoadPilot-Map) | Map processing and geographic data |
+| [RoadPilot-Telemetry](https://github.com/RoadPilotHQ/RoadPilot-Telemetry) | Read-only game telemetry plugin and reader |
+| [RoadPilot-SDK](https://github.com/RoadPilotHQ/RoadPilot-SDK) | Game input plugin (throttle, brake, steering axes) |
 | [RoadPilot-Language](https://github.com/RoadPilotHQ/RoadPilot-Language) | Translations and localization |
 | [RoadPilot-Visualization](https://github.com/RoadPilotHQ/RoadPilot-Visualization) | Visualization components and development tools |
 | [RoadPilot-Plugin](https://github.com/RoadPilotHQ/RoadPilot-Plugin) | Plugin architecture and SDK |
@@ -43,22 +45,31 @@ RoadPilot is split into independent repositories. Each one is developed, version
 | [RoadPilot-Discord](https://github.com/RoadPilotHQ/RoadPilot-Discord) | Discord community infrastructure |
 | **RoadPilot-Docs** (this repository) | Central documentation |
 
-RoadPilot-Docs documents all other RoadPilot repositories. Each repository keeps its own README; detailed and cross-cutting documentation is planned to live here.
+RoadPilot-Docs documents all other RoadPilot repositories. Each repository keeps its own README and its own specifications; cross-cutting documentation lives here and links to them instead of repeating them. See [docs/architecture.md](docs/architecture.md) for responsibilities, the telemetry and input architecture, dependencies between repositories and verification status.
 
 ## Development status
 
 | Area | Status |
 |---|---|
-| Source code | Not started |
-| Architecture | In planning |
+| Source code | None (documentation only) |
+| Architecture | Overview available: [docs/architecture.md](docs/architecture.md) |
 | Releases | None |
+
+Development phases of the RoadPilot project:
+
+| Phase | Description | Status |
+|---|---|---|
+| 4.1 | Telemetry capability audit | Completed |
+| 4.2 | Wheel geometry implementation | Completed |
+| 4.3 | Steering input support | Completed |
+| 4.4 | Not started | Planned |
 
 ## Planned roadmap
 
 Planned work, in no fixed order and without dates:
 
 - [ ] Choose the documentation tooling and structure
-- [ ] Write the ecosystem architecture overview
+- [x] Write the ecosystem architecture overview (initial version, [docs/architecture.md](docs/architecture.md))
 - [ ] Write the shared contribution guidelines
 - [ ] Add installation and user guides once a release exists
 - [ ] Add developer and API documentation as interfaces are defined

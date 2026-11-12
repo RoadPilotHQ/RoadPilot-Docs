@@ -2,7 +2,7 @@
 
 RoadPilot-Docs is the central documentation for the entire RoadPilot ecosystem. It currently contains an [architecture overview](docs/architecture.md) and this README; more documentation is planned.
 
-> **Status: early.** This repository contains documentation only, no source code. The [architecture overview](docs/architecture.md) describes the other repositories as of Phase 4.3 and links to their authoritative specifications. The user guides, API reference and other items below are **planned**, not existing.
+> **Status: early.** This repository contains documentation only, no source code. The [architecture overview](docs/architecture.md) describes the other repositories as of Phase 4.4 and links to their authoritative specifications. The user guides, API reference and other items below are **planned**, not existing.
 
 ## Purpose
 
@@ -62,7 +62,8 @@ Development phases of the RoadPilot project:
 | 4.1 | Telemetry capability audit | Completed |
 | 4.2 | Wheel geometry implementation | Completed |
 | 4.3 | Steering input support | Completed |
-| 4.4 | Not started | Planned |
+| 4.4 | Control foundation in dry run (RoadPilot) | Completed |
+| 4.5 | Not started | Planned |
 
 ## Planned roadmap
 
